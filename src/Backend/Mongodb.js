@@ -1,6 +1,6 @@
 require('mongoose');
 let mongoUrl="";
-export let mongodb=mongoose.connect("").then(res=>console.log("Connection Establish")).catch(err=>console.log("Something Wrong"));
+export let mongodb=mongoose.connect("Link of MongoDB").then(res=>console.log("Connection Establish")).catch(err=>console.log("Something Wrong"));
 
 let Schema=new mongoose.Schema({
     question:{type:string,required},
